@@ -6,7 +6,7 @@ describe('Pruebas en el archivo de callBack', () => {
     const str = 'Hola Mundo';
     const strReverse = reverseCallBack(str, reverseString);
 
-    console.log(strReverse);
+    // console.log(strReverse);
   
     expect(strReverse).toBe('odnuM aloH');
   
