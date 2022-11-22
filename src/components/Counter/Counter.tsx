@@ -10,9 +10,6 @@ const Counter: React.FC<CounterInterface> = ({value}) => {
 	const [count, setCount] = useState(value);
 	return (
 		<div className="App">
-			<div>
-				<img src={reactLogo} className="logo react" alt="React logo" />
-			</div>
 			<h1>Testing React</h1>
 			<h2>{count}</h2>
 			<div className="card">
