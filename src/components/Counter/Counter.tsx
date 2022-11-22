@@ -14,7 +14,7 @@ const Counter: React.FC<CounterInterface> = ({value}) => {
 				<img src={reactLogo} className="logo react" alt="React logo" />
 			</div>
 			<h1>Testing React</h1>
-			<p>{count}</p>
+			<h2>{count}</h2>
 			<div className="card">
 				<button onClick={() => setCount((count) => count + 1)}>+1</button>
 				<button onClick={() => setCount((count) => count - 1)}>-1</button>
