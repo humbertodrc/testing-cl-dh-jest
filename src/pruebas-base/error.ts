@@ -1,7 +1,10 @@
-export const createUser = (userName: string) => {
-  if (!userName) throw new Error("El nombre de usuario es obligatorio");
+type User = {
+  uid: string;
+  name: string;
+}
 
-  return {
-    userName
-  };
+export const createUser = (user: User) => {
+  if (user.name === "") throw new Error("El nombre de usuario es obligatorio");
+
+  return user
 }
