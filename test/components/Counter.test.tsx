@@ -14,6 +14,8 @@ describe("Pruebas en <Counter />", () => {
 	test("Debe Mostrar el Valor inicial de 50", () => {
 		render(<Counter value={50} />);
 
+		screen.debug();
+
 		expect(screen.getByText("50")).toBeTruthy();
 
 		expect(screen.getByRole("heading", {level: 2}).innerHTML).toContain("50");
